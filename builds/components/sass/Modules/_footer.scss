@@ -1,0 +1,30 @@
+footer {
+	width: 100%;
+	@extend %bg-blue;
+	height: 100px;
+	line-height: 100px;
+	font-size: $large-font-size;	
+	.footer {
+		width: 42em;
+		margin: 0 auto;
+		@extend %clearfix;
+		@include responsive(md) {
+			width: 100%;
+			height: 100%;
+		}
+		@include responsive(xs) {
+			line-height: 1.5;
+		}
+		h5 {
+			float: left;
+			margin: 0;
+			text-align: center;
+			margin-left: $margin-social-mobile;
+			@extend %mute-link;
+			@include responsive(xs) {
+				float: none;
+				padding-top: 3%;
+			}
+		}
+	}
+}
