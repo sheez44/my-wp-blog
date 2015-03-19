@@ -18,54 +18,36 @@ var gulp = require('gulp'),
 var env,
 	jsSources,
 	sassSources,
-	htmlSources,
-	jsSources,
-	outputDir,
 	sassStyle;
 
-env = process.env.NODE_ENV || 'development';  // in gitbash 'NODE_ENV=production gulp'
-
-if(env === 'development') { 
-	outputDir = './builds/development/';
-	sassStyle = 'expanded';
-} else {
-	outputDir = './builds/production/';
-	sassStyle = 'compressed';
-};
-
 jsSources = [
-	'./builds/components/scripts/gallery.js',
-	'./builds/components/scripts/modal-window.js',
-	'./builds/components/scripts/smoothscroll.js',
-	'./builds/components/scripts/template.js'
+	'./js/gallery.js',
+	'./js/modal-window.js',
+	'./js/smoothscroll.js',
+	'./js/template.js'
 ];
-sassSources = ['./builds/components/sass/style.scss'];
-htmlSources = [outputDir + '/*.html'];
-jsonSources = [outputDir + '/js/*.json'];
+sassSources = ['sass/style.scss'];
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
 		.pipe(browserify())
-		.pipe(gulpif(env === 'production', uglify())) // If the env variable is set to production then run uglify
-		.pipe(gulp.dest(outputDir + '/js'))
+		.pipe(gulp.dest('/js'))
 		.pipe(connect.reload())
 });
 
 gulp.task('compass', function() {
 	gulp.src(sassSources)
 		.pipe(compass({
-			sass: './builds/components/sass',
+			config: './config.rb',
+			sass: 'sass',
 			css: './',
-			image: outputDir + '/images',
-			style: sassStyle,
-			comments: true
 		}))
 		.on('error', function(error) {
 			console.log(error);
 			this.emit('end');
 		})
-		.pipe(gulp.dest(outputDir + '/css'))
+		.pipe(gulp.dest('/'))
 		.pipe(connect.reload())
 })
 
@@ -73,31 +55,14 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(jsSources, ['js']);
-	gulp.watch('./builds/components/sass/*.scss', ['compass']);
-	gulp.watch('./builds/development/*.html', ['html']);
-	gulp.watch('./builds/development/*.json', ['json']);
+	gulp.watch('./sass/*.scss', ['compass']);
 });
 
 gulp.task('connect', function() {
 	connect.server({
-		root: outputDir,
+		root: '/',
 		livereload: true
 	});
 });
 
-gulp.task('html', function() {
-	gulp.src('./builds/development/*.html')
-	.pipe(gulpif(env === 'production', minifyHTML()))
-	.pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-	.pipe(connect.reload())
-});
-
-gulp.task('json', function() {
-	gulp.src('./builds/development/js/*.json')
-	.pipe(gulpif(env === 'production', minifyJSON()))
-	.pipe(gulpif(env === 'production', gulp.dest('./builds/production/js')))
-	.pipe(connect.reload())
-});
-
-
-gulp.task('default', ['html', 'js', 'compass', 'json', 'connect', 'watch']);
+gulp.task('default', ['js', 'compass', 'connect', 'watch']);
