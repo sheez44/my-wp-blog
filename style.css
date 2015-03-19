@@ -4,7 +4,6 @@ Theme Name: Psy-Dev Blog
 Author: Johan voorhout
 Author URI: http://www.psy-dev.nl
 Version: 1.0
-test: test
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 /* $white: #d5d5d5; */
@@ -1340,4 +1339,11 @@ footer .footer h5 {
 }
 .modaltext__description {
   font-weight: 300;
+}
+
+article.post {
+  border-bottom: 2px solid #2183c4;
+}
+article.post:last-of-type {
+  border-bottom: none;
 }

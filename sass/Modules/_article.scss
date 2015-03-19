@@ -1,3 +1,6 @@
 article.post {
-	border-bottom: 2px solid #990;
+	border-bottom: 2px solid $blue;
+	&:last-of-type {
+		border-bottom: none;
+	}
 }

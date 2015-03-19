@@ -3,7 +3,7 @@
     <footer>
 
         <div class="footer">
-            <h5>&copy; <?php echo date('Y'); ?><a class="mute-link" href="#">psy-dev.nl</a></h5>
+            <h5><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?> - <a class="mute-link" href="#">psy-dev.nl</a></h5>
 
             <ul class="social__list social__list--footer"> 
                 <li class="social__listitem social__listitem--footer">
