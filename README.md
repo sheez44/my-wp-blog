@@ -1,8 +1,4 @@
-My Homepage psy-dev.nl
+My blogpage on psy-dev.nu
 ===========
 
-My personal homepage is build to showcase my latest projects and also contains relevant information about me. I built the site using:
--SASS
--Compass
--BEM
--Grunt
+My personal blogpage will contain frontend development tutorials and blog posts.
