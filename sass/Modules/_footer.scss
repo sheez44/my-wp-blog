@@ -1,11 +1,11 @@
 footer {
 	width: 100%;
 	@extend %bg-blue;
-	height: 100px;
-	line-height: 100px;
-	font-size: $large-font-size;	
+	font-size: $large-font-size;
+	padding: 0 0 2em;	
+	clear: both;
 	.footer {
-		width: 42em;
+		width: 1140px;
 		margin: 0 auto;
 		@extend %clearfix;
 		@include responsive(md) {
@@ -27,4 +27,10 @@ footer {
 			}
 		}
 	}
+}
+
+.info-box {
+	float: right;
+	padding: 3em;
+	border: 1px solid red;
 }

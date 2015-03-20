@@ -39,11 +39,12 @@
         </div>
 
         <nav class="nav">
-            <ul>
-                <li><a href="#my_projects">Projects</a></li>
-                <li><a href="#my_skills">Skills</a></li>
-                <li><a href="#my_bio">Bio</a></li>
-                <li><a href="#my_contact">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+            
+            <?php $args = array(
+                'theme_location' => 'primary'
+                );
+
+                ?>
+
+			<?php wp_nav_menu( $args ); ?>
         </nav>
