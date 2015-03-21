@@ -1,6 +1,38 @@
 article.post {
 	border-bottom: 2px solid $blue;
+	background: rgb(39, 50, 68);
+	padding: 30px;
+	margin-bottom: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	&:first-of-type {
+		margin-top: 5%;
+	}
 	&:last-of-type {
 		border-bottom: none;
+	}
+}
+
+.post {
+	&__title {
+		margin-top: 0;
+		margin-bottom: 3px;
+		font-size: 190%;
+		a {
+			color: $blue;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+	}
+	&__subtitle {
+		color: #989898;
+		font-size: 87%;
+		margin-top: 0;
+		a {
+			color: #A9A9A9;
+		}
 	}
 }

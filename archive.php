@@ -4,6 +4,29 @@
   get_header();
 
   if (have_posts() ) :
+    ?>
+
+    <h2><?php 
+    if ( is_category() ) {
+      single_cat_title();
+    } elseif (is_tag() ) {
+      single_tag_title();
+    } elseif (is_author() ) {
+      the_post();
+      echo 'Author Archives: ' . get_the_author();
+    } elseif (is_day() ) {
+      echo 'day archive';
+    } elseif (is_month() ) {
+      echo "month";
+    } else if (is_year() ) {
+      echo "Year";
+    } else {
+      echo "archives";
+    }
+    ?>
+    </h2>
+
+    <?php 
     while (have_posts() ) : the_post(); ?>
 
     <article class="post">
