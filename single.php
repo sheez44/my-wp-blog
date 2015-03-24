@@ -28,6 +28,7 @@
 
       </h5>
       <?php the_post_thumbnail('banner-image'); ?>
+      
       <p><?php the_content(); ?></p>
     </article>  
       <?php endwhile;

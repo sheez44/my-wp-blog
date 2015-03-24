@@ -1,0 +1,10 @@
+.post.has-thumbnail {
+	.post__thumbnail {
+		width: 20%;
+		float: left;
+	}
+	.post__content {
+		width: 80%;
+		float: right;
+	}
+}

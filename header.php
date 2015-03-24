@@ -36,6 +36,8 @@
                 <img src="images/me.jpg" alt="my photo">
             </div>
 
+            
+
         </div>
 
         <nav class="nav">
@@ -47,4 +49,8 @@
                 ?>
 
 			<?php wp_nav_menu( $args ); ?>
-        </nav>
+        </nav>      
+
+        <div class="hd-search">
+                <?php get_search_form(); ?>
+        </div>

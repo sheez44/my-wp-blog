@@ -23,7 +23,7 @@ function psydevImage() {
 	// add featured image support
 	add_theme_support('post-thumbnails');
 	add_image_size('small-thumbnail', 180, 120, true); // width, height, crop?
-	add_image_size('banner-image', 1000, 300, true);
+	add_image_size('banner-image', 1140, 300, true);
 
 	register_nav_menus(array(
 	'primary' => __('Primary Menu'),
