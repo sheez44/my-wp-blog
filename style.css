@@ -1199,6 +1199,17 @@ footer .footer h5 {
   border: 1px solid red;
 }
 
+.post.post-aside, .post.post-link {
+  border: none;
+  border-radius: 5px;
+  background: #FFF5CB;
+  color: #292929;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+}
+
 article.post {
   border-bottom: 2px solid #2183c4;
   background: #273244;
@@ -1238,6 +1249,34 @@ article.post:last-of-type {
 .post img {
   max-width: 100%;
   height: auto;
+}
+.post.post-link {
+  position: relative;
+  background: #E0EBFF;
+  padding: 0;
+}
+.post.post-link a {
+  display: block;
+  padding: 20px;
+  color: #2183c4;
+}
+.post.post-link::before {
+  content: "link";
+  position: absolute;
+  top: -11px;
+  left: -18px;
+  transform: rotate(-30deg);
+  font-size: 150%;
+  background: tomato;
+  color: #fff;
+  padding: 15px;
+}
+
+.mini-meta {
+  font-size: 68%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .post.page h2 {

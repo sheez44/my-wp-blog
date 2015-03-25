@@ -1,3 +1,14 @@
+%custom-posts {
+	border: none;
+	border-radius: 5px;
+	background: #FFF5CB;
+	color: $gray-dark;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 1.5em;
+}
+
 article.post {
 	border-bottom: 2px solid $blue;
 	background: rgb(39, 50, 68);
@@ -40,4 +51,36 @@ article.post {
 		max-width: 100%;
 		height: auto;
 	}
+	&.post-aside {
+		@extend %custom-posts;
+	}
+	&.post-link {
+		position: relative;
+		@extend %custom-posts;
+		background: #E0EBFF;
+		padding: 0;
+		a {
+			display: block;
+			padding: 20px;
+			color: $blue;
+		}
+		&::before {
+			content: "link";
+			position: absolute;
+			top: -11px;
+			left: -18px;
+			transform: rotate(-30deg);
+			font-size: 150%;
+			background: tomato;
+			color: $white;
+			padding: 15px;
+		}
+	}
+}
+
+.mini-meta {
+	font-size: 68%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
 }
