@@ -2,7 +2,10 @@
 <?php 
   
   get_header();
+  ?>
 
+  <div class="main-column">
+    <?php
   if (have_posts() ) :
     while (have_posts() ) : the_post();
 
@@ -14,7 +17,12 @@
       echo '<p>No content Found </p>';
 
     endif;
+    ?>
+  </div>
 
+  <?php get_sidebar(); ?>
+
+  <?php
     get_footer();
 
 ?>

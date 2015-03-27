@@ -76,8 +76,19 @@ article.post {
 			padding: 15px;
 		}
 	}
+	&.post-gallery {
+  		background: darkgray;
+  		border: none;
+  		img {
+  			border: none !important;
+  		}
+	}
 }
 
+.post-gallery__title {
+  text-align: center;
+  color: red;
+}
 .mini-meta {
 	font-size: 68%;
 	margin: 0;

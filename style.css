@@ -9,7 +9,7 @@ Version: 1.0
 /* $white: #d5d5d5; */
 /* @include establish-baseline($base-font-size);
  */
-section:after, nav:after, .header:after, .portfolio:after, .portfolio ul:after, .skill-lockup:after, .heading:after, .nav ul:after, footer .footer:after, .post:after {
+.wrapper:after, section:after, nav:after, .header:after, .portfolio:after, .portfolio ul:after, .skill-lockup:after, .heading:after, .nav ul:after, footer .footer:after, .post:after {
   content: "";
   display: table;
   clear: both;
@@ -340,6 +340,16 @@ ul, ol {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.main-column {
+  width: 67%;
+  float: left;
+}
+
+.side-column {
+  width: 30%;
+  float: right;
 }
 
 .wrapper {
@@ -1270,6 +1280,18 @@ article.post:last-of-type {
   background: tomato;
   color: #fff;
   padding: 15px;
+}
+.post.post-gallery {
+  background: darkgray;
+  border: none;
+}
+.post.post-gallery img {
+  border: none !important;
+}
+
+.post-gallery__title {
+  text-align: center;
+  color: red;
 }
 
 .mini-meta {
