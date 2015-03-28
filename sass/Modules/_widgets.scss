@@ -1,0 +1,32 @@
+.widget-title {
+	font-style: $font-roboto;
+	font-size: 20px;
+	color: $blue;
+	margin: 0 0 5%;
+}
+
+.widget-item {
+	padding: 10px 0;
+	border-bottom: 1px solid $white;
+	li {
+		margin-bottom: 2%;
+		.post-date {
+			color: rgb(224, 235, 255);
+			display:block;
+		}
+	}
+	&:last-child {
+		border: none;
+	}
+	&:first-child {
+		margin-top: 20px;
+	}
+}
+
+#searchform {
+	input[type="submit"] {
+		background: $blue;
+		border: 0;
+		margin-left: 10px;
+	}
+}

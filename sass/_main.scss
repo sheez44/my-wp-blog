@@ -21,14 +21,29 @@ ul, ol {
   list-style-type: none;
 }
 
+select {
+  max-width: 100%;
+}
+
 .main-column {
-  width: 67%;
+  width: 75%;
   float: left;
 }
 
 .side-column {
-  width: 30%;
+  width: 22%;
   float: right;
+  img {
+    @extend %img-resp;
+  }
+  select {
+    color: black;
+  }
+  a {
+    &:link, &:visited {
+      color: inherit;
+    }
+  }
 }
 
 .wrapper {

@@ -95,6 +95,11 @@ Version: 1.0
   content: '\f0c0';
 }
 
+.side-column img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -342,14 +347,24 @@ ul, ol {
   list-style-type: none;
 }
 
+select {
+  max-width: 100%;
+}
+
 .main-column {
-  width: 67%;
+  width: 75%;
   float: left;
 }
 
 .side-column {
-  width: 30%;
+  width: 22%;
   float: right;
+}
+.side-column select {
+  color: black;
+}
+.side-column a:link, .side-column a:visited {
+  color: inherit;
 }
 
 .wrapper {
@@ -1229,7 +1244,7 @@ article.post {
   border-top-right-radius: 10px;
 }
 article.post:first-of-type {
-  margin-top: 5%;
+  margin-top: 4%;
 }
 article.post:last-of-type {
   border-bottom: none;
@@ -1313,4 +1328,35 @@ article.post:last-of-type {
 .post.has-thumbnail .post__content {
   width: 80%;
   float: right;
+}
+
+.widget-title {
+  font-style: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #2183c4;
+  margin: 0 0 5%;
+}
+
+.widget-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+.widget-item li {
+  margin-bottom: 2%;
+}
+.widget-item li .post-date {
+  color: #e0ebff;
+  display: block;
+}
+.widget-item:last-child {
+  border: none;
+}
+.widget-item:first-child {
+  margin-top: 20px;
+}
+
+#searchform input[type="submit"] {
+  background: #2183c4;
+  border: 0;
+  margin-left: 10px;
 }

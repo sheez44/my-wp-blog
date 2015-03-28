@@ -51,6 +51,6 @@
 			<?php wp_nav_menu( $args ); ?>
         </nav>      
 
-        <div class="hd-search">
+<!--         <div class="hd-search">
                 <?php get_search_form(); ?>
-        </div>
+        </div> -->

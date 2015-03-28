@@ -89,3 +89,8 @@ $skewed-header-margin-md: 1em auto;
 	font-smoothing: antialiased;
 	content: '\f0c0';
 }
+
+%img-resp {
+	max-width: 100%;
+	height: auto;
+}
