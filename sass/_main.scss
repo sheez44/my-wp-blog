@@ -209,3 +209,14 @@ section, nav, .header {
 @each $network, $unicode in $social {
   .social__listitem > a[href*="#{$network}"]::before { content: '#{$unicode}'; }
 }
+
+.fp-posts{
+  width: 40%;
+  &--tuts {
+      float: right;
+    }
+  &--blog{
+    float: left;
+  }
+
+}

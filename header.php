@@ -17,7 +17,7 @@
     	               	                
             <div class="heading">
 
-                <a href="<?php echo home_url(); ?>"><img src="images/psy-dev-logo.png" class="header__photo" alt="Site logo"></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?> /images/psy-dev-logo.png" class="header__photo" alt="Site logo"></a>
 
                 <h1 class="heading__title">Johan Voorhout</h1>
                 <h2 class="heading__title--subtitle">Webdeveloper, Psychologist, Learner</h2>
@@ -33,7 +33,7 @@
             <div class="personal">
                 
                 <h3>Front-end Webdeveloper and Economic Psychologist. Passionate about Webdevelopment, Consumer Behavior, Marketing and Statistics.</h3>
-                <img src="images/me.jpg" alt="my photo">
+                <img src="<?php bloginfo('template_url'); ?> /images/me.jpg" alt="my photo">
             </div>
 
             

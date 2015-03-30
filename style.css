@@ -580,6 +580,16 @@ a .popup__link, a .popup__link--git {
   content: "";
 }
 
+.fp-posts {
+  width: 40%;
+}
+.fp-posts--tuts {
+  float: right;
+}
+.fp-posts--blog {
+  float: left;
+}
+
 .header {
   background: #363636;
   height: 11rem;
@@ -1324,9 +1334,10 @@ article.post:last-of-type {
 .post.has-thumbnail .post__thumbnail {
   width: 20%;
   float: left;
+  margin-right: 4%;
 }
 .post.has-thumbnail .post__content {
-  width: 80%;
+  width: 76%;
   float: right;
 }
 
