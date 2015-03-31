@@ -212,11 +212,36 @@ section, nav, .header {
 
 .fp-posts{
   width: 40%;
+  a:link, a:visited {
+    color: tomato;
+    text-decoration: none;
+    font-size: 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    color: #CDCDCD;
+    &:first-of-type {
+      border-bottom: 1px dashed $white;
+      padding-bottom: 18px;
+    }
+  }
   &--tuts {
       float: right;
     }
   &--blog{
     float: left;
   }
+  h2 {
+    font-size: 36px;
+    margin-bottom: 8%;
+    margin-top: 8%;
+  }
+}
 
+.archive-title {
+  text-align: center;
+  font-size: 36px;
+  color: $blue;
 }

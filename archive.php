@@ -6,7 +6,7 @@
   if (have_posts() ) :
     ?>
 
-    <h2><?php 
+    <h2 class="section-header"><?php 
     if ( is_category() ) {
       single_cat_title();
     } elseif (is_tag() ) {

@@ -4,6 +4,11 @@ Theme Name: Psy-Dev Blog
 Author: Johan voorhout
 Author URI: http://www.psy-dev.nl
 Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: This theme is part of the psy-dev brand. It is used for blog posts and tutorials
+that are related to frontend webdevelopment.
+
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 /* $white: #d5d5d5; */
@@ -78,7 +83,7 @@ Version: 1.0
   font-family: Broadway, regular;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  background: rgba(41, 41, 41, 0.6);
+  background: rgba(33, 131, 196, 0.6);
 }
 
 .mute-link, footer .footer h5 {
@@ -583,11 +588,37 @@ a .popup__link, a .popup__link--git {
 .fp-posts {
   width: 40%;
 }
+.fp-posts a:link, .fp-posts a:visited {
+  color: tomato;
+  text-decoration: none;
+  font-size: 20px;
+}
+.fp-posts a:link:hover, .fp-posts a:visited:hover {
+  text-decoration: underline;
+}
+.fp-posts p {
+  color: #CDCDCD;
+}
+.fp-posts p:first-of-type {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 18px;
+}
 .fp-posts--tuts {
   float: right;
 }
 .fp-posts--blog {
   float: left;
+}
+.fp-posts h2 {
+  font-size: 36px;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+
+.archive-title {
+  text-align: center;
+  font-size: 36px;
+  color: #2183c4;
 }
 
 .header {
@@ -1370,4 +1401,113 @@ article.post:last-of-type {
   background: #2183c4;
   border: 0;
   margin-left: 10px;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
