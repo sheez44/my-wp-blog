@@ -8,8 +8,12 @@
 .widget-item {
 	padding: 10px 0;
 	border-bottom: 1px solid $white;
+	ul {
+		padding-left: 0;
+	}
 	li {
 		margin-bottom: 2%;
+		@extend %clean-list;
 		.post-date {
 			color: rgb(224, 235, 255);
 			display:block;

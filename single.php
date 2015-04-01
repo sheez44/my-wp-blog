@@ -1,12 +1,12 @@
 
 <?php 
   
-  get_header();
-
-  if (have_posts() ) :
-    while (have_posts() ) : the_post(); ?>
-
+  get_header(); ?>
     <article class="post">
+      <?php
+      while (have_posts() ) : the_post(); ?>
+
+    
       <h2 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <h5 class="post__subtitle">This article was posted on <?php the_time('d F, Y') ?> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> |  
 
@@ -29,15 +29,18 @@
       </h5>
       <?php the_post_thumbnail('banner-image'); ?>
       
-      <p><?php the_content(); ?></p>
+      <p><?php the_content(); 
+
+      ?></p>
+
+      <p><?php if ( comments_open() || get_comments_number() ) :
+        comments_template();
+      endif; ?></p>
+
     </article>  
-      <?php endwhile;
+    <?php endwhile; ?>
 
-    else : 
-      echo '<p>No content Found </p>';
-
-    endif;
-
+<?php
     get_footer();
 
 ?>
