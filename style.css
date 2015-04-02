@@ -1514,3 +1514,45 @@ article.post:last-of-type {
   border: 0;
   margin-left: 10px;
 }
+
+.comment-body p {
+  margin-left: 53px;
+  color: #000;
+}
+
+.comment.even {
+  background: #eee;
+}
+
+.comment.odd {
+  background: yellow;
+}
+
+.comment-author, .comment-meta {
+  background: #292929;
+}
+
+.comment-author {
+  color: tomato;
+}
+
+.comment-meta {
+  padding-left: 53px;
+}
+.comment-meta a:link, .comment-meta a:visited {
+  color: #eee;
+}
+
+ol.commentList {
+  padding-left: 0;
+}
+
+.comment {
+  list-style-type: none;
+  margin-bottom: 2%;
+}
+
+.comment .children {
+  background: #273244;
+  list-style-type: none;
+}

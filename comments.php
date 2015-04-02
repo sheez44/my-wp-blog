@@ -34,7 +34,7 @@ if ( have_comments() ) : ?>
       // 'callback'          => null,
       // 'end-callback'      => null,
       // 'type'              => 'all',
-      // 'avatar_size'       => 32,
+      'avatar_size'       => 50
       // 'reverse_top_level' => null,
       // 'reverse_children'  =>
       ));
