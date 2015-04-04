@@ -33,9 +33,11 @@
 
       ?></p>
 
-      <p><?php if ( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif; ?></p>
+      <?php  
+        if ( comments_open() || get_comments_number() ) :
+          comments_template();
+        endif; 
+      ?>
 
     </article>  
     <?php endwhile; ?>

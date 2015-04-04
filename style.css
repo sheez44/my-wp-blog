@@ -1317,6 +1317,27 @@ a img.aligncenter {
   left: -99999px;
 }
 
+.comment-form {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+.comment-form .comment-notes {
+  margin-top: 0;
+}
+.comment-form .form-submit {
+  margin-bottom: 0;
+}
+
+.comment-reply-title {
+  margin-bottom: 0px;
+  background: white none repeat scroll 0% 0%;
+  color: #00A21E;
+  padding-left: 20px;
+  font-size: 200%;
+  padding-top: 20px;
+}
+
 footer {
   width: 100%;
   font-size: 21px;
@@ -1512,11 +1533,10 @@ article.post:last-of-type {
 #searchform input[type="submit"] {
   background: #2183c4;
   border: 0;
-  margin-left: 10px;
 }
 
 .comment-body p {
-  margin-left: 53px;
+  margin-left: 30px;
   color: #000;
 }
 
@@ -1525,34 +1545,76 @@ article.post:last-of-type {
 }
 
 .comment.odd {
-  background: yellow;
+  background: #84BBF9;
 }
 
 .comment-author, .comment-meta {
   background: #292929;
+  padding-left: 15px;
 }
-
-.comment-author {
-  color: tomato;
-}
-
-.comment-meta {
-  padding-left: 53px;
-}
-.comment-meta a:link, .comment-meta a:visited {
+.comment-author a:link, .comment-author a:visited, .comment-meta a:link, .comment-meta a:visited {
   color: #eee;
 }
 
-ol.commentList {
+.comment-author {
+  padding-top: 15px;
+  color: #fff;
+}
+
+.comment-meta {
+  padding-bottom: 15px;
+}
+
+ol.comment-list {
   padding-left: 0;
 }
 
 .comment {
   list-style-type: none;
   margin-bottom: 2%;
+  color: #292929;
+}
+.comment h1, .comment h2, .comment h3, .comment h4, .comment h5, .comment h6 {
+  margin-left: 30px;
+}
+.comment .fn {
+  font-size: 28px;
+}
+.comment .fn a:link, .comment .fn a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.comment .fn a:link:hover, .comment .fn a:visited:hover {
+  text-decoration: underline;
+  color: #2183c4;
+}
+.comment .says {
+  font-size: 22px;
+  margin-left: 0.5%;
+  color: tomato;
 }
 
 .comment .children {
   background: #273244;
   list-style-type: none;
+}
+
+a.comment-reply-link {
+  color: purple;
+  margin-left: 30px;
+  padding-bottom: 15px;
+}
+
+.bypostauthor > .comment-body {
+  background: tomato;
+}
+
+.bypostauthor .says::after {
+  content: "Author";
+  margin-left: 2%;
+  background: #eee;
+  padding: 5px;
+  font-size: 16px;
+  position: relative;
+  top: -23px;
 }

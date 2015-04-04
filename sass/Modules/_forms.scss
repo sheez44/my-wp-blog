@@ -17,3 +17,24 @@
 		left: -99999px;
 	}
 }
+
+.comment-form {
+	background: $white;
+	color: $black;
+	padding: 20px;
+	.comment-notes {
+		margin-top: 0;
+	}
+	.form-submit {
+		margin-bottom: 0;
+	}
+}
+
+.comment-reply-title {
+	margin-bottom: 0px;
+	background: white none repeat scroll 0% 0%;
+	color: #00A21E;
+	padding-left: 20px;
+	font-size: 200%;
+	padding-top: 20px;
+}
