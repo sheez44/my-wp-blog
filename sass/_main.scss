@@ -19,6 +19,9 @@ select {
   max-width: 100%;
 }
 
+a:link, a:visited {
+  color: tomato;
+}
 .main-column {
   width: 75%;
   float: left;

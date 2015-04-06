@@ -356,6 +356,10 @@ select {
   max-width: 100%;
 }
 
+a:link, a:visited {
+  color: tomato;
+}
+
 .main-column {
   width: 75%;
   float: left;
@@ -1337,6 +1341,15 @@ a img.aligncenter {
   font-size: 200%;
   padding-top: 20px;
 }
+.comment-reply-title a {
+  text-decoration: none;
+}
+
+#cancel-comment-reply-link {
+  font-size: 16px;
+  color: red;
+  text-decoration: underline;
+}
 
 footer {
   width: 100%;
@@ -1538,6 +1551,7 @@ article.post:last-of-type {
 .comment-body p {
   margin-left: 30px;
   color: #000;
+  padding: 25px 0;
 }
 
 .comment.even {
@@ -1579,6 +1593,7 @@ ol.comment-list {
 }
 .comment .fn {
   font-size: 28px;
+  margin-left: 1%;
 }
 .comment .fn a:link, .comment .fn a:visited {
   text-decoration: none;
@@ -1600,9 +1615,17 @@ ol.comment-list {
 }
 
 a.comment-reply-link {
-  color: purple;
+  color: #fff;
   margin-left: 30px;
-  padding-bottom: 15px;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0 15px;
+}
+a.comment-reply-link:hover {
+  color: #292929;
+  border-left: 1px solid #292929;
+  border-right: 1px solid #292929;
 }
 
 .bypostauthor > .comment-body {
@@ -1617,4 +1640,24 @@ a.comment-reply-link {
   font-size: 16px;
   position: relative;
   top: -23px;
+}
+
+.bypostauthor .reply {
+  background: #fff;
+}
+
+.reply {
+  background: tomato;
+  padding: 4px 0;
+}
+
+.bypostauthor a.comment-reply-link {
+  color: #292929;
+  border-left: 1px solid #292929;
+  border-right: 1px solid #292929;
+}
+.bypostauthor a.comment-reply-link:hover {
+  color: #2183c4;
+  border-left: 1px solid #2183c4;
+  border-right: 1px solid #2183c4;
 }
