@@ -31,7 +31,6 @@ sassSources = ['sass/style.scss'];
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
-		.pipe(browserify())
 		.pipe(gulp.dest('/js'))
 		.pipe(connect.reload())
 });
@@ -64,5 +63,6 @@ gulp.task('connect', function() {
 		livereload: true
 	});
 });
+
 
 gulp.task('default', ['js', 'compass', 'connect', 'watch']);

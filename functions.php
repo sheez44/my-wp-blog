@@ -3,7 +3,8 @@
 function psydevBlog() {
 
 	wp_enqueue_style('style', get_stylesheet_uri() );
-
+	wp_deregister_script('jquery'); // Remove WordPress core's jQuery
+	wp_register_script('jquery', 'http://code.jquery.com/jquery-2.1.3.min.js', false, null, false);
 }
 
 add_action('wp_enqueue_scripts', 'psydevBlog');
@@ -68,3 +69,12 @@ function filter_wp_title( $title ) {
 }
 
 add_filter( 'wp_title', 'filter_wp_title' );
+
+// limit the amount of archives displayed in widget
+
+function my_limit_archives( $args ) {
+    $args['limit'] = 12;
+    return $args;
+}
+add_filter( 'widget_archives_args', 'my_limit_archives' );
+add_filter( 'widget_archives_dropdown_args', 'my_limit_archives' );

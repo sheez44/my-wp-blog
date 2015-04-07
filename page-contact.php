@@ -10,12 +10,7 @@
       <h2><?php the_title(); ?></h2>
       <p><?php the_content(); ?></p>
     </article>  
-      <?php 
-      if ( comments_open() || get_comments_number() ) :
-        comments_template();
-
-      endif;
-
+      <?php
       endwhile;
 
     else : 
