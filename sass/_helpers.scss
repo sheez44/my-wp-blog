@@ -58,7 +58,7 @@ $skewed-header-margin-md: 1em auto;
 	font-family: $font;
 	border-bottom: 2px solid $color;
 	border-right: 2px solid $color;
-	background: rgba($blue, 0.6);
+	@extend %bg-blue;
 	@extend %skewed-header;
 }
 
