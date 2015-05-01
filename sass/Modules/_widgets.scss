@@ -8,6 +8,16 @@
 .widget-item {
 	padding: 10px 0;
 	border-bottom: 1px solid $white;
+	@include responsive(md) {
+		width: 46%;
+		float: left;
+		margin: 0 2%; 
+	}
+	@include responsive(sm) {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
 	ul {
 		padding-left: 0;
 	}

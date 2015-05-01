@@ -26,7 +26,7 @@
 
     </h5>
 
-    <?php if (is_search() || is_archive() ) { // on search page always only show the excerpt ?>
+    <?php if (is_search() || is_archive() || is_front_page() ) { // on search page always only show the excerpt ?>
       <p>
       <?php echo get_the_excerpt(); ?>
       <a href="<?php the_permalink(); ?>">Read more&raquo;</a>

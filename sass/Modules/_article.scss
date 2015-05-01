@@ -16,6 +16,12 @@ article.post {
 	margin-bottom: 10px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	@include responsive (md) {
+		padding: 20px;
+	}
+	@include responsive (sm) {
+		padding: 8px;
+	}
 	&:first-of-type {
 		margin-top: 4%;
 	}
@@ -30,6 +36,7 @@ article.post {
 		margin-top: 0;
 		margin-bottom: 3px;
 		font-size: 190%;
+		line-height: 30px;
 		a {
 			color: $blue;
 			text-decoration: none;

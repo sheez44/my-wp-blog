@@ -25,11 +25,21 @@ a:link, a:visited {
 .main-column {
   width: 75%;
   float: left;
+  @include responsive(md) {
+    width: 98%;
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 .side-column {
   width: 22%;
   float: right;
+  @include responsive(md) {
+    width: 98%;
+    margin: 0 auto;
+    float: none;
+  }
   img {
     @extend %img-resp;
   }

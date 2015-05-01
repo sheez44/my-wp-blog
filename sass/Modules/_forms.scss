@@ -18,6 +18,7 @@
 	}
 }
 
+// COMMENTS
 .comment-form {
 	background: $white;
 	color: $black;
@@ -30,13 +31,17 @@
 	}
 }
 
+form#commentform {
+	width: 100%;
+}
+
 .comment-reply-title {
 	margin-bottom: 0px;
-	background: white none repeat scroll 0% 0%;
-	color: #00A21E;
-	padding-left: 20px;
-	font-size: 200%;
-	padding-top: 20px;
+	background: $bgcolor-primary none repeat scroll 0% 0%;
+	color: $white;
+	padding: 20px;
+	font-size: 150%;
+
 	a {
 		text-decoration: none;
 	}
@@ -47,6 +52,8 @@
 	color: red;
 	text-decoration: underline;
 }
+
+// FORMS
 
 %form-width {
 	width: 600px;
@@ -105,6 +112,12 @@ form {
 		width: 25%;
 		color: $gray-dark;
 		padding: 10px;
+		@include responsive (sm) {
+			width: 50%;
+		}
+		@include responsive (xs) {
+			width: 60%;
+		}
 	}
 }
 
