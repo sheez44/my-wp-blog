@@ -19,7 +19,7 @@
 
                 <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/psy-dev-logo.png" class="header__photo" alt="Site logo"></a>
 
-                <h1 class="heading__title">Johan Voorhout</h1>
+                <h1 class="heading__title"><a href="<?php echo home_url(); ?>">Johan Voorhout </a></h1>
                 <h2 class="heading__title--subtitle">Webdeveloper, Psychologist, Learner</h2>
                 <ul class="social__list social__list--header">
                     <li class="social__listitem social__Listitem--header"><a target="_blank" href="https://www.facebook.com/johan.voorhout/"></a></li>

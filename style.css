@@ -850,6 +850,13 @@ a img.aligncenter {
 .heading__title {
   font-size: 36px;
 }
+.heading__title a:visited, .heading__title a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.heading__title a:visited:hover, .heading__title a:link:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 1023px) {
   .heading__title {
     font-size: 1.875rem;

@@ -42,11 +42,19 @@
     height: 104px;
   }
   &__title {
+     a:visited, a:link {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+    }
     @extend %heading-titles;
     font-size: $larger-font-size;
     @include responsive(lg) {
       font-size: em(30px);
       display: inline;
+
     }
     &--subtitle {
       @extend %heading-titles;
