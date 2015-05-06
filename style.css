@@ -14,7 +14,7 @@ that are related to frontend webdevelopment.
 /* $white: #d5d5d5; */
 /* @include establish-baseline($base-font-size);
  */
-.wrapper:after, section:after, nav:after, .header:after, .portfolio:after, .portfolio ul:after, .skill-lockup:after, .heading:after, .nav ul:after, form .input__group:after, footer .footer:after, .post:after {
+.wrapper:after, section:after, nav:after, .header:after, .portfolio:after, .portfolio ul:after, .skill-lockup:after, .heading:after, .nav ul:after, form .input__group:after, .cpp_form:after, footer .footer:after, .post:after {
   content: "";
   display: table;
   clear: both;
@@ -1487,6 +1487,11 @@ form input[type="submit"] {
 
 .widget-item form {
   max-width: 100%;
+}
+
+.cpp_form .pbSubmit {
+  margin: 0;
+  background: #2183c4;
 }
 
 footer {

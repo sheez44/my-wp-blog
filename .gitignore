@@ -72,3 +72,4 @@ node_modules
 *.sublime-project
 *.sublime-workspace
 inc
+analyticstracking.php

@@ -134,3 +134,12 @@ form {
 		max-width: 100%;
 	}
 }
+
+// form plugin
+.cpp_form {
+	@extend %clearfix;
+	.pbSubmit {
+		margin: 0;
+		background: $blue;
+	}
+}
