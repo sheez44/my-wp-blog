@@ -34,7 +34,7 @@
 
             </div>
 
-            <img src="images/my_graduation.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/images/my_graduation.png" alt="">
 
         </section>      
 

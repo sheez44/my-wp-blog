@@ -22,7 +22,7 @@
                 <h1 class="heading__title"><a href="<?php echo home_url(); ?>">Johan Voorhout </a></h1>
                 <h2 class="heading__title--subtitle">Webdeveloper, Psychologist, Learner</h2>
                 <ul class="social__list social__list--header">
-                    <li class="social__listitem social__Listitem--header"><a target="_blank" href="https://www.facebook.com/johan.voorhout/"></a></li>
+                    <li class="social__listitem social__Listitem--header"><a target="_blank" href="https://twitter.com/psydev_blog"></a></li>
                     <li class="social__listitem social__Listitem--header"><a target="_blank" href="http://nl.linkedin.com/in/johanvoorhout/"></a></li>
                     <li class="social__listitem social__Listitem--header"><a target="_blank" href="https://github.com/sheez44/"></a></li>
                     <li class="social__listitem social__Listitem--header"><a href="mailto:contact@psy-dev.nl"></a></li>

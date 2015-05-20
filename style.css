@@ -600,8 +600,8 @@ a .popup__link, a .popup__link--git {
   }
 }
 
-.social__listitem > a[href*="facebook.com"]::before {
-  content: "";
+.social__listitem > a[href*="twitter.com"]::before {
+  content: "";
 }
 
 .social__listitem > a[href*="linkedin.com"]::before {

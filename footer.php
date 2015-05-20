@@ -17,7 +17,7 @@
 
             <ul class="social__list social__list--footer"> 
                 <li class="social__listitem social__listitem--footer">
-                   <a target="_blank" href="https://www.facebook.com/johan.voorhout/"></a>
+                   <a target="_blank" href="https://twitter.com/psydev_blog"></a>
                </li>
                <li class="social__listitem social__listitem--footer">
 
