@@ -20,7 +20,7 @@
 
 // COMMENTS
 .comment-form {
-	background: $white;
+	background: #E4E4E4;
 	color: $black;
 	padding: 20px;
 	.comment-notes {
@@ -110,6 +110,7 @@ form {
 		display: block;
 		margin-top: 10px;
 		width: 25%;
+		background: $white;
 		color: $gray-dark;
 		padding: 10px;
 		@include responsive (sm) {

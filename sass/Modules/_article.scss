@@ -30,6 +30,7 @@ article.post {
 	}
 	h1 {
 		line-height: 1.2;
+		text-transform: capitalize;
 	}
 }
 
@@ -43,6 +44,8 @@ article.post {
 		a {
 			color: $blue;
 			text-decoration: none;
+			font-style: italic;
+			font-size: 32px;
 			&:hover {
 				text-decoration: underline;
 				cursor: pointer;
@@ -50,7 +53,7 @@ article.post {
 		}
 	}
 	&__subtitle {
-		color: #989898;
+		color: rgb(41, 41, 41);
 		font-size: 87%;
 		margin-top: 0;
 		a {
@@ -104,4 +107,10 @@ article.post {
 	margin: 0;
 	padding: 0;
 	text-align: left;
+}
+
+.single .post {
+	background: #fff;
+	font-family: Verdana;
+	color: black;
 }
