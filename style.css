@@ -1596,6 +1596,9 @@ article.post:first-of-type {
 article.post:last-of-type {
   border-bottom: none;
 }
+article.post h1 {
+  line-height: 1.2;
+}
 
 .post__title {
   margin-top: 0;
