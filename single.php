@@ -6,7 +6,6 @@
       <?php
       while (have_posts() ) : the_post(); ?>
 
-    <div class="post-title">
       <h2 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <h5 class="post__subtitle">This article was posted on <?php the_time('d F, Y') ?> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> |  
 
@@ -27,9 +26,10 @@
       ?>
 
       </h5>
-      </div>
+
+
       <?php the_post_thumbnail('banner-image'); ?>
-      
+      <hr>
       <p><?php the_content(); 
 
       ?></p>
@@ -41,6 +41,8 @@
           comments_template();
         endif; 
       ?>
+
+    
 
     </article>  
 

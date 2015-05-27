@@ -32,7 +32,7 @@
                 
             <div class="personal">
                 
-                <h3>Front-end Webdeveloper and Economic Psychologist. Passionate about Webdevelopment, Consumer Behavior, Marketing and Statistics.</h3>
+                <h3>This blog is for people that like to start with frontend webdevelopment. I will share my experiences in this blog as well as tutorials and guides.</h3>
                 <img src="<?php bloginfo('template_url'); ?>/images/me.jpg" alt="my photo">
             </div>
 

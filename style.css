@@ -1611,7 +1611,6 @@ article.post h1 {
 .post__title a {
   color: #2183c4;
   text-decoration: none;
-  font-style: italic;
   font-size: 32px;
 }
 .post__title a:hover {
@@ -1619,7 +1618,7 @@ article.post h1 {
   cursor: pointer;
 }
 .post__subtitle {
-  color: #292929;
+  color: #fff;
   font-size: 87%;
   margin-top: 0;
 }
@@ -1675,6 +1674,17 @@ article.post h1 {
   background: #fff;
   font-family: Verdana;
   color: black;
+}
+.single .post__title a {
+  font-style: italic;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 40px;
+}
+.single .post__subtitle {
+  color: #292929;
+}
+.single .post__subtitle a:visited, .single .post__subtitle a:link {
+  color: tomato;
 }
 
 .post.page h2 {

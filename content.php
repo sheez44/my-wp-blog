@@ -25,6 +25,7 @@
     ?>
 
     </h5>
+    <hr>
 
     <?php if (is_search() || is_archive() || is_front_page() ) { // on search page always only show the excerpt ?>
       <p>
