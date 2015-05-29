@@ -11,6 +11,7 @@ that are related to frontend webdevelopment.
 
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 /* $white: #d5d5d5; */
 /* @include establish-baseline($base-font-size);
  */
@@ -1672,19 +1673,27 @@ article.post h1 {
 
 .single .post {
   background: #fff;
-  font-family: Verdana;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
+  font-size: 18px;
+  line-height: 30.6px;
+  padding: 52px 70px 70px;
 }
 .single .post__title a {
-  font-style: italic;
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 40px;
 }
 .single .post__subtitle {
   color: #292929;
+  font-family: Oswald, Arial, sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
 }
 .single .post__subtitle a:visited, .single .post__subtitle a:link {
   color: tomato;
+}
+.single .post hr:first-of-type {
+  margin-bottom: 1.5em;
 }
 
 .post.page h2 {

@@ -110,17 +110,25 @@ article.post {
 
 .single .post {
 	background: #fff;
-	font-family: Verdana;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: black;
+	font-size: 18px;
+	line-height: 30.6px;
+	padding: 52px 70px 70px;
 	&__title a {
-		font-style: italic;
-		font-family: "Lato", Helvetica, sans-serif;
+		font-family: $font-post;
 		font-size: 40px;
 	}
 	&__subtitle  {
 		color: rgb(41, 41, 41);
+		font-family: $font-post;
+		margin-bottom: 0;
+		letter-spacing: 0.05em;
 		a:visited, a:link {
 			color: tomato;
 		}
+	}
+	hr:first-of-type {
+		margin-bottom: 1.5em;
 	}
 }

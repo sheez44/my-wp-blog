@@ -26,10 +26,10 @@
       ?>
 
       </h5>
-
+            <hr>
 
       <?php the_post_thumbnail('banner-image'); ?>
-      <hr>
+
       <p><?php the_content(); 
 
       ?></p>
